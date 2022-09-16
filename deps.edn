@@ -1,0 +1,17 @@
+{:deps    {io.methvin/directory-watcher {:mvn/version "0.15.1"}
+           org.clojure/clojure          {:mvn/version "1.11.1"}
+           org.slf4j/slf4j-nop          {:mvn/version "2.0.3"}}
+ :paths   ["src"]
+ :aliases {:repl  {:extra-deps {nrepl/nrepl                   {:mvn/version "0.8.3"}
+                                cider/cider-nrepl             {:mvn/version "0.28.5"}
+                                refactor-nrepl/refactor-nrepl {:mvn/version "3.5.5"}}
+                   :main-opts  ["-m" "nrepl.cmdline"
+                                "--middleware" "[cider.nrepl/cider-middleware refactor-nrepl.middleware/wrap-refactor]"]}
+           :test  {:extra-paths ["test"]
+                   :extra-deps  {com.cognitect/test-runner {:git/url "https://github.com/cognitect-labs/test-runner.git"
+                                                            :sha     "705ad25bbf0228b1c38d0244a36001c2987d7337" }}
+                   :jvm-opts    ["-Dprofile=test"]
+                   :main-opts   ["-m" "cognitect.test-runner"]}
+           :build {:deps       {io.zalky/build-clj {:git/url "https://github.com/zalky/build-clj.git"
+                                                    :git/sha "c8782e887381160f6d34d48425dc2d3a2a40f4cb"}}
+                   :ns-default io.zalky.build}}}
