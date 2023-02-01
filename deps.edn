@@ -1,4 +1,4 @@
-{:deps    {io.methvin/directory-watcher {:mvn/version "0.15.1"}
+{:deps    {io.methvin/directory-watcher {:mvn/version "0.17.1"}
            org.clojure/clojure          {:mvn/version "1.11.1"}
            org.slf4j/slf4j-nop          {:mvn/version "2.0.3"}}
  :paths   ["src"]
