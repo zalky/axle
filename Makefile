@@ -1,5 +1,5 @@
 
-version-number  = 0.2.0
+version-number  = 0.2.1
 group-id        = io.zalky
 artifact-id     = axle
 description     = An efficient cross-platform DirectoryWatcher based service for Clojure
