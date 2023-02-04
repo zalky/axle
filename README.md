@@ -20,7 +20,7 @@ cross-platform, high performance
 Just add the following dependency in your `deps.edn`:
 
 ```clj
-io.zalky/axle {:mvn/version "0.2.0"}
+io.zalky/axle {:mvn/version "0.2.1"}
 ```
 
 You can start a watch task like so:
